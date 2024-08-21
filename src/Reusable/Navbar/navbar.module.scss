@@ -8,9 +8,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: rgba(22, 19, 18, 0.65);
+  backdrop-filter: blur(8.25px);
+  padding: 30px;
 
   span {
     font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    font-size: 14px;
+
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   ul {
@@ -21,6 +34,14 @@
 
     li {
       font-size: 18px;
+      color: #fff;
     }
+  }
+  .active {
+    color: #52b954;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
 }
