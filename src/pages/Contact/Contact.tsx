@@ -1,5 +1,11 @@
+import Navbar from "../../Reusable/Navbar/Navbar";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default Contact;
