@@ -1,20 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Animate from "./libs/Animate";
-import styles from "./index.module.scss";
+import ParentWrapper from "./Reusable/ParentWrapper";
 
 function App() {
   return (
     <>
-      <div className={styles.body}>
-        <Router>
-          <Animate>
+      <Router>
+        <Animate>
+          <ParentWrapper>
             <Routes>
               <Route path="/" element={<Home />} />
             </Routes>
-          </Animate>
-        </Router>
-      </div>
+          </ParentWrapper>
+        </Animate>
+      </Router>
     </>
   );
 }
