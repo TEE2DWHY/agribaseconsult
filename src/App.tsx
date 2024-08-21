@@ -3,7 +3,7 @@ import Home from "./pages/Home/Home";
 import Animate from "./libs/Animate";
 import ParentWrapper from "./Reusable/ParentWrapper";
 
-function App() {
+const App = () => {
   return (
     <>
       <Router>
@@ -17,6 +17,6 @@ function App() {
       </Router>
     </>
   );
-}
+};
 
 export default App;
