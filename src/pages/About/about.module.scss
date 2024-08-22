@@ -2,3 +2,45 @@
   @media screen and (max-width: 868px) {
   }
 }
+.secondPart{
+  width: 100%;
+  height: 550px;
+  background-color: #FCFCFC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondPart1{
+  width: 85%;
+  height: 380px;
+  // background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondPart01, .secondPart02{
+  width: 50%;
+}
+.wordsPart1{
+  font-size: 40px;
+font-weight: 700;
+line-height: 120%;
+}
+.wordsPart2{
+  color: var(--Black08, #40454D);
+font-size: 18px;
+font-weight: 400;
+line-height: 120%; 
+}
+.secondPartButton{
+  width: 231px;
+  border-radius: 32px;
+  background-color: var(--green10, #52B954);
+  height: 52px;
+  border: none;
+  color: #FCFCFC;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
