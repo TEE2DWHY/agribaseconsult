@@ -1,0 +1,42 @@
+.firstHero{
+    width: 100%;
+    height: 518px;
+    background: 
+        linear-gradient(to right, rgba(193, 225, 194, 0.69) 20%, rgba(255, 255, 255, 1) 100%),
+        url("../../../../assets/images/frame.svg");
+    background-size: contain; 
+    background-position: left; 
+    background-repeat: no-repeat;
+
+}
+.firstHero1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstHero2, .firstHero3{
+    width: 50%;
+}
+.heroWords{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.heroWords2{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+font-weight: 300;
+line-height: 21.6px;
+}
+.heroButton{
+    font-family: "Outfit", sans-serif;
+    width: 231px;
+  border-radius: 32px;
+  background-color: var(--green10, #52B954);
+  height: 52px;
+  border: none;
+  color: #FCFCFC;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
