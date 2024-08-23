@@ -3,6 +3,7 @@ import AboutBody2 from "./components/AboutBody2";
 import AboutBody1 from "./components/AboutBody1";
 import Navbar from "../../Reusable/Navbar/Navbar";
 import Footer from "../../Reusable/Footer/Footer";
+import AboutTeam from "./components/AboutTeam";
 
 export default function About() {
   return <>
@@ -10,6 +11,7 @@ export default function About() {
            <AboutHero/>
            <AboutBody1/>
            <AboutBody2/>
+           <AboutTeam/>
            <Footer/>
     </>;
 }
