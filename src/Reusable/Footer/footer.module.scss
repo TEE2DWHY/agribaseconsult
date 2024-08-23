@@ -24,6 +24,7 @@ $footerfontp: Outfit;
 .footer_neck {
   display: flex;
   flex-direction: row;
+  gap: 100px;
   padding: 50px;
   color: $basewhite;
 
@@ -69,27 +70,45 @@ $footerfontp: Outfit;
 .footer_p2{
   color: $basewhite;
   font-family: $footerfontp;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   
 }
 
-.footer_space{
-  width: 11%;
-  @include mobile {
-    display: none;
-}
-}
+// .footer_space{
+//   width: 11%;
+//   @include mobile {
+//     display: none;
+// }
+// }
 
+// footer row 2
 .footer_row2{
-  width: 8%;
+  width: 10%;
 
   @include mobile {
     width: 100%;
 }
 }
+
+.footer_ul{
+  width: 79px;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    margin-left: -40px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+// footer row 3
 
 .footer_row3{
   width: 20%;
@@ -99,10 +118,21 @@ $footerfontp: Outfit;
 }
 
 .footer_row4{
-  width: 8%;
+  width: 10%;
   @include mobile {
     width: 100%;
 }
+}
+
+.footer_social_icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  @include mobile{
+    gap: 10px;
+    justify-content: unset;
+  }
 }
 
 // copyright section
