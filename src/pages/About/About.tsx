@@ -5,11 +5,13 @@ import Navbar from "../../Reusable/Navbar/Navbar";
 import Footer from "../../Reusable/Footer/Footer";
 
 export default function About() {
-  return <>
-           <Navbar/>
-           <AboutHero/>
-           <AboutBody1/>
-           <AboutBody2/>
-           <Footer/>
-    </>;
+  return (
+    <>
+      <Navbar />
+      <AboutHero />
+      <AboutBody1 />
+      <AboutBody2 />
+      <Footer />
+    </>
+  );
 }
