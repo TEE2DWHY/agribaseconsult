@@ -8,15 +8,86 @@
     background-position: left; 
     background-repeat: no-repeat;
 
+
 }
 .firstHero1{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .firstHero2, .firstHero3{
     width: 50%;
 }
+.firstHero2{
+    align-items: flex-start;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.firstHero3{
+    position: relative;
+    height: 500px;
+
+}
+.backgroundImage {
+    position: absolute;
+    top: 79%;
+    left: 70%;
+    width: 55%;
+
+}
+
+.foregroundImage {
+    position: absolute;
+    top: 1%; 
+    left: -10px; 
+    width: 100%;
+}
+.animatedImage {
+    left: 115px; /* Adjust based on where you want it to end */
+    animation: moveToPosition 0.3s ease-out forwards;
+}
+
+
+@keyframes moveToPosition {
+    0% {
+        transform: translateY(15vh); /* Start from off-screen */
+    }
+    100% {
+        transform: translateY(0); /* Move to the specified position */
+        position: absolute; /* Switch to absolute positioning at the end */
+        top: 14%; /* Final position after the animation */
+    }
+}
+.starOne, .starTwo{
+    position: absolute;
+}
+.starOne{
+    top: 10%;
+    left: 32%;
+}
+.starTwo{
+    top: 88%;
+    left: 72%;
+}
+.animatedStar{
+    left: 72%; /* Adjust based on where you want it to end */
+    animation: moveToPositionStar 0.3s ease-out forwards;
+}
+@keyframes moveToPositionStar {
+    0% {
+        transform: translateY(15vh); /* Start from off-screen */
+    }
+    100% {
+        transform: translateY(0); /* Move to the specified position */
+        position: absolute; /* Switch to absolute positioning at the end */
+        top: 88%; /* Final position after the animation */
+    }
+}
+
 .heroWords{
     font-size: 40px;
     font-weight: 700;
