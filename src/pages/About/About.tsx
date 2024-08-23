@@ -6,12 +6,14 @@ import Footer from "../../Reusable/Footer/Footer";
 import AboutTeam from "./components/AboutTeam";
 
 export default function About() {
-  return <>
-           <Navbar/>
-           <AboutHero/>
-           <AboutBody1/>
-           <AboutBody2/>
-           <AboutTeam/>
-           <Footer/>
-    </>;
+  return (
+    <>
+      <Navbar />
+      <AboutHero />
+      <AboutBody1 />
+      <AboutBody2 />
+      <AboutTeam/>
+      <Footer />
+    </>
+  );
 }
