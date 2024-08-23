@@ -4,7 +4,7 @@ import styles from "./footer.module.scss"
 import copyright from "../../assets/images/Copyright.svg"
 import instagram_icon from "../../assets/images/Instagram.svg"
 import f_icon from "../../assets/images/f.svg"
-import x_icon from "../../assets/images/x.svg"
+import x_icon from "../../assets/images/x_footer.svg"
 
 const Footer = () => {
   const location = useLocation();
@@ -48,7 +48,7 @@ const Footer = () => {
               {routes.map((route) => (
           <li
             key={route.path}
-            // className={`${activeRoute === route.path ? styles.active : ""}`}
+            className={`${activeRoute === route.path ? styles.active : ""}`}
           >
             <Link to={route.path} onClick={() => setActiveRoute(route.path)}>
               {route.label}
