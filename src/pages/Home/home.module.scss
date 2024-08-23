@@ -3,6 +3,55 @@
   }
 }
 
+// Cards
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  .card {
+    margin-top: 3%;
+    width: calc(30% - 50px);
+    border-radius: 16px;
+    border: 1.5px solid #86ce87;
+    height: 254px;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 56px;
+      height: 56px;
+    }
+
+    h2 {
+      margin: 10px 0;
+      color: var(--Black10, #101720);
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    p {
+      color: var(--Black08, #40454d);
+      text-align: center;
+      font-family: "Outfit";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 0;
+    }
+  }
+}
+
+// Hero Section
 .heroSection {
   position: relative;
   display: flex;
@@ -70,5 +119,40 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+}
+
+// Features
+.features {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 0 100px;
+
+  h2 {
+    color: var(--Black10, #101720);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+
+  .subHeader {
+    // padding: 0 50px;
+    text-transform: capitalize;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 0;
+    font-family: "Outfit";
+    color: var(--Black08, #40454d);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
   }
 }
