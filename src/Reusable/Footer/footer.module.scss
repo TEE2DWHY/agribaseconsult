@@ -1,12 +1,189 @@
 // pls use this for mobile
 @mixin mobile {
   @media screen and (max-width: 868px) {
+    @content
   }
 }
 
-// colors variable
+// color variables
 $basewhite: #FCFCFC;
+$basew: #FFFFFF;
 $baseblack: #101720;
 $basegreen: #52B954;
 $basegreenbg: linear-gradient(117.24deg, rgba(193, 225, 194, 0.69) -23.41%, #005300 95.83%);
 $basewhitebg: linear-gradient(180deg, #F6F6F6 0%, #D9D9D9 100%);
+
+// font variables
+$footerfontp: Outfit;
+$footerfonth: Montserrat Alternates;
+
+
+.footer_head{
+  background-color: $baseblack;
+}
+
+.footer_neck {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 50px;
+  color: $basewhite;
+
+  @include mobile {
+      display: block;
+      padding: 0 20px;
+  }
+}
+
+
+// div1 row 1 for footer
+
+.footer_row1{
+  width: 30%;
+  padding: 10px;
+  @include mobile {
+    width: 100%;
+    margin-top: 20px;
+}
+}
+
+
+.rowx{
+  display: flex;
+  width: 307px;
+  font-family: $footerfontp;
+}
+
+.footer_logo{
+  width: 90px;
+  height: 93px;
+  flex-shrink: 0;
+}
+
+.footer_p1{
+  color: $basew;
+  font-family: $footerfontp;
+  margin-left: 30px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: extra-expanded;
+}
+
+.footer_p2{
+  color: $basewhite;
+  font-family: $footerfontp;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+}
+
+// footer row 2
+.footer_row2{
+  width: 10%;
+
+  @include mobile {
+    width: 100%;
+    margin-top: 20px;
+}
+}
+
+.footer_row2_p1{
+  font-family: $footerfonth;
+}
+
+.footer_ul{
+  width: 79px;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    margin-left: -40px;
+    font-family: $footerfontp;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+// footer row 3
+
+.footer_row3{
+  width: 20%;
+  @include mobile {
+    width: 100%;
+    margin-top: 20px;
+}
+}
+
+.footer_row3p{
+  font-family: $footerfonth;
+}
+
+
+.footer_rowppp{
+  font-family: $footerfontp;
+  color: $basew;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer_rowppp p:nth-child(2){
+  margin: 12px 0;
+}
+
+.footer_row4{
+  // width: 20%;
+  @include mobile {
+    width: 100%;
+    margin-top: 20px;
+}
+}
+
+.footer_social_icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  @include mobile{
+    gap: 10px;
+    justify-content: unset;
+  }
+}
+
+// copyright section
+
+.footer_hr{
+  color: #585D63;
+}
+
+.footer_pend{
+  color: $basewhite;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+
+.footer_copyright{
+  display: flex;
+  flex-direction: row;
+  padding: 0px 96px;
+  gap: 8px;
+
+  @include mobile {
+    padding: 0 0;
+    justify-content: center;
+}
+}
+
+
+
