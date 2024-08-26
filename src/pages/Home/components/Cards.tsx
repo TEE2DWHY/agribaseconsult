@@ -12,7 +12,7 @@ const Cards: React.FC<Cards> = ({ image, headerText, text, alt }) => {
   return (
     <>
       <div className={styles.card}>
-        <img src={image} alt={alt} className={styles.img} />
+        <img src={image} alt={alt} />
         <h2>{headerText}</h2>
         <p>{text}</p>
       </div>
