@@ -1,0 +1,80 @@
+.secondPart{
+    background-color: #E8F6E9;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondPart1{
+    width: 85%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.secondPart01, .secondPart02{
+    width: 50%;
+  }
+
+  .productWord{
+    color: var(--Black10, #101720);
+    font-family: "Montserrat Alternates";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  .productWord2{
+    color: var(--Base-Base-Black, #090A0B);
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+    width: 85%;
+  }
+  .productWord3{
+    color: var(--green10, #52B954);
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21.6px;
+  }
+
+  .productImage{
+    border-radius: 10px;
+    width: 100%;
+  }
+  .secondPartButton{
+    font-family: "Outfit", sans-serif;
+    width: 231px;
+    border-radius: 32px;
+    background-color: var(--green10, #52B954);
+    height: 52px;
+    border: none;
+    color: #FCFCFC;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .productOR{
+    color: var(--Base-Base-Black, #090A0B);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin-left: 90px;
+  }
+  .productCall{
+    display: inline-flex;
+    align-items: center;
+  }
+  .pCall{
+    color: var(--Base-Base-Black, #090A0B);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    margin-left: 20px;
+  }
