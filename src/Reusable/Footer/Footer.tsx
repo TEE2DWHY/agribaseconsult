@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* ROW 2 */}
           <div className={styles.footer_row2}>
-            <p>Company</p>
+            <p className={styles.footer_row2_p1}>Company</p>
             <div className={styles.footer_ul}>
             <ul>
               {routes.map((route) => (
@@ -58,11 +58,14 @@ const Footer = () => {
       </ul>
             </div>
           </div>
+
           <div className={styles.footer_row3}>
-            <p>Get in touch</p>
+            <p className={styles.footer_row3p}>Get in touch</p>
+            <div className={styles.footer_rowppp}>
             <p>Abule Agerige village, Odeda, Abeokuta,Ogun State.</p>
             <p>admin@agribaseconsult.farm</p>
             <p>+23480130506443</p>
+            </div>
           </div>
 
           {/* Footer Row 3 */}
