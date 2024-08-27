@@ -1,0 +1,6 @@
+// pls use this for mobile
+@mixin mobile {
+    @media screen and (max-width: 868px) {
+      @content
+    }
+  }
