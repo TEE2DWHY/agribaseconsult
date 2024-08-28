@@ -19,14 +19,17 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <span>
-        <img
-          src="https://res.cloudinary.com/dg7zsjimc/image/upload/v1724250698/Agribase_Consult_Icon_iaeqdm.svg"
-          alt="logo"
-          className={styles.logo}
-        />
-        Agribase Consult
-      </span>
+      <Link to="/">
+        <span>
+          <img
+            src="https://res.cloudinary.com/dg7zsjimc/image/upload/v1724250698/Agribase_Consult_Icon_iaeqdm.svg"
+            alt="logo"
+            className={styles.logo}
+          />
+          Agribase Consult
+        </span>
+      </Link>
+
       <ul>
         {routes.map((route) => (
           <li

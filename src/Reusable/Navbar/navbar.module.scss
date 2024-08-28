@@ -10,7 +10,7 @@
   justify-content: space-between;
   background: rgba(22, 19, 18, 0.65);
   backdrop-filter: blur(6.25px);
-  padding: 20px;
+  padding: 20px 40px;
 
   span {
     font-weight: 900;
@@ -30,7 +30,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 90px;
 
     li {
       font-size: 16px;
