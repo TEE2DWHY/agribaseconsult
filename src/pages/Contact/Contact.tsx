@@ -1,17 +1,17 @@
 import Footer from "../../Reusable/Footer/Footer";
 import styles from "./contact.module.scss"
-// import mappin from "../../assets/images/mappin.svg"
-// import envelope from "../../assets/images/envelope.svg"
-// import phone from "../../assets/images/phone.svg"
-// import instagram_icon from "../../assets/images/insta.svg"
-// import f_icon from "../../assets/images/facebook.svg"
-// import x_icon from "../../assets/images/x.svg"
-// import Navbar from "../../Reusable/Navbar/Navbar";
+import mappin from "../../assets/images/mappin.svg"
+import envelope from "../../assets/images/envelope.svg"
+import phone from "../../assets/images/phone.svg"
+import instagram_icon from "../../assets/images/insta.svg"
+import f_icon from "../../assets/images/facebook.svg"
+import x_icon from "../../assets/images/x.svg"
+import Navbar from "../../Reusable/Navbar/Navbar";
 
 const Contact = () => {
   return (
     <> 
-      {/* <Navbar /> */}
+      <Navbar />
       <div className={styles.contact_hero}>
         <div className={styles.contact_head}>
           <div className={styles.contact_row1}>
@@ -19,7 +19,7 @@ const Contact = () => {
             <p>For inquiries or more information, please reach out to us through our email, contact address or simply give us a call. We are here to assist with all your poultry needs.</p>
             <span>
               <img
-                // src={mappin}
+                src={mappin}
                 alt="map pin"
                 // className={styles.footer_logo}
               />
@@ -29,7 +29,7 @@ const Contact = () => {
 
             <span>
               <img
-                // src={envelope}
+                src={envelope}
                 alt="envelope"
                 // className={styles.footer_logo}
               />
@@ -38,7 +38,7 @@ const Contact = () => {
 
             <span>
               <img
-                // src={phone}
+                src={phone}
                 alt="phone"
                 // className={styles.footer_logo}
               />
@@ -47,17 +47,17 @@ const Contact = () => {
 
             <div className={styles.social_icons}>
           <img
-          // src={instagram_icon}
+          src={instagram_icon}
           alt="instagram-icon"
           />
 
           <img
-          // src={f_icon}
+          src={f_icon}
           alt="facebook-icon"
           />
 
           <img
-          // src={x_icon}
+          src={x_icon}
           alt="X-icon"
           />
           </div>
