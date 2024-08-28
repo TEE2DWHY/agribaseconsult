@@ -1,6 +1,7 @@
 import styles from "../home.module.scss";
 import cock from "../../../assets/images/cock.png";
 import check from "../../../assets/images/check.svg";
+import eggDesign from "../../../assets/images/egg-design.png";
 
 const Offer = () => {
   return (
@@ -44,6 +45,20 @@ const Offer = () => {
         </div>
         <div className={styles.right}>
           <img src={cock} alt="cock-img" />
+        </div>
+      </div>
+      <div className={styles.raisedChickens}>
+        <div className={styles.left}>
+          <img src={eggDesign} alt="egg-design" />
+        </div>
+        <div className={styles.right}>
+          <h1>Enjoy fresh eggs from pasture raised Chicken.</h1>
+          <p>
+            Enjoy the rich, natural flavour of fresh eggs from our
+            pasture-raised chickens, nurtured in open fields for healthier, more
+            nutritious eggs straight from our farm to your table.
+          </p>
+          <button>Order Now</button>
         </div>
       </div>
     </>
