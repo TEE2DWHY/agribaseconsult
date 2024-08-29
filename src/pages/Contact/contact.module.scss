@@ -9,7 +9,7 @@
   width: 100%;
   height: 518px;
   background: 
-      linear-gradient(to right, rgba(193, 225, 194, 0.69) 20%, rgba(255, 255, 255, 1) 100%),
+  linear-gradient(165deg, rgba(193, 225, 194, 0.69) -33.58%, #FFF 72.35%),
       url("../../assets/images/frame.svg");
   background-size: contain; 
   background-position: left; 
@@ -63,3 +63,14 @@
   display: flex;
   gap: 10px;
 }
+
+.social_icons{
+  padding-left: 10px;
+}
+
+.social_icons img:not(:first-child) {
+  justify-content: space-between;
+  margin-left: 16px;
+  z-index: 999;
+}
+

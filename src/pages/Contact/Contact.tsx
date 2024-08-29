@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
           </div>
           <div className={styles.contact_row2}>
-            GET IN TOUCH
+            <p>GET IN TOUCH</p>
           </div>
         </div>
       </div>
