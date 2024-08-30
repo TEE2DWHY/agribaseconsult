@@ -1,5 +1,5 @@
 import styles from '../Components/styles/ContactBody.module.scss'
-import half_bowl from "../../../assets/images/half_bow.svg"
+// import half_bowl from "../../../assets/images/half_bow.svg"
 import Faq from '../../../Reusable/Faq/Faq'
 
 const ContactBody = () => {
