@@ -291,3 +291,116 @@
     }
   }
 }
+
+// Feedback
+.feedback {
+  background: rgba(183, 185, 188, 0.22);
+  padding: 40px 100px;
+
+  h1 {
+    color: var(--Base-Base-Black, #090a0b);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: var(--Black08, #40454d);
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: 40%;
+    margin-top: 0;
+    text-align: justify;
+  }
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+  }
+
+  .testimonial {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    transition: transform 0.5s ease-in-out;
+
+    .customerInfo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      .left {
+        display: flex;
+        gap: 10px;
+
+        .details {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      span {
+        color: #7d7d7d;
+        font-size: 14px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #40454d;
+      width: 100%;
+    }
+
+    .rating {
+      span {
+        color: #ffa500;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #ddd;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &.active {
+        background-color: #52b954;
+      }
+    }
+  }
+}
