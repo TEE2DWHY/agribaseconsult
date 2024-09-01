@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   padding: 40px 0;
+  margin-bottom: -50px;
+  z-index: 999999;
+
+  .subscribe {
+    width: 70%;
+    display: flex;
+    align-self: center;
+    border-radius: 24px;
+    margin-bottom: 30px;
+
+    .left {
+      border-radius: 24px;
+      background: linear-gradient(
+          117deg,
+          rgba(193, 225, 194, 0.69) -23.41%,
+          #005300 95.83%
+        ),
+        url("../../assets/images/green-frame.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 40px;
+      width: 80%;
+
+      h1 {
+        color: #fff;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+      }
+
+      p {
+        color: #fff;
+        text-align: justify;
+        width: 90%;
+        line-height: 1.4;
+        font-family: "outfit";
+        margin-top: 0;
+      }
+    }
+
+    .right {
+      border-radius: 0 24px 24px 0;
+      margin-left: -15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      background: linear-gradient(180deg, #f6f6f6 0%, #d9d9d9 100%);
+      padding: 40px;
+      width: 40%;
+
+      input {
+        border-radius: 8px;
+        border: 1px solid rgba(88, 93, 99, 0.61);
+        background: var(--Base-Base-White, #fcfcfc);
+        padding: 16px;
+        width: 100%;
+        font-family: inherit;
+        text-transform: capitalize;
+        font-family: "outfit";
+        outline: none;
+      }
+
+      button {
+        border-radius: 32px;
+        background: var(--green10, #52b954);
+        font-family: "outfit";
+        display: flex;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 50%;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+}
