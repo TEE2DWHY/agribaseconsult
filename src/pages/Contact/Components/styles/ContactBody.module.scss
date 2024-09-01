@@ -5,11 +5,21 @@
   }
 
   .contact_body{
-    display: flex;
-    text-align: center;
-    margin-top: 250px;
-
+    height: 1000px;
     @include mobile{
       margin-top: 100px;
     }
+  }
+
+  .contact_body_div1{
+    position: relative;
+    top: 400px;
+    left: 0;
+  }
+
+  .contact_body_div2{
+    text-align: center;
+    padding: 0 25%;
+    position: relative;
+    top: -100px;
   }

@@ -6,7 +6,7 @@ const ContactBody = () => {
   return (
     <>
      <div className={styles.contact_body}>
-            <div className={styles.contact_body_div2}>
+            <div className={styles.contact_body_div1}>
             <img
           src={half_bowl}
           alt="egg bowl"
