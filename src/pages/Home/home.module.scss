@@ -1,7 +1,4 @@
-@mixin mobile {
-  @media screen and (max-width: 868px) {
-  }
-}
+@import "../../utils/breakpoint.module.scss"; // for styling on all screens
 
 // Cards
 .cards {
@@ -11,6 +8,10 @@
   gap: 50px;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  @include media("<=phone") {
+    flex-direction: column;
+    gap: 30px;
+  }
 
   .card {
     margin-top: 3%;
@@ -22,6 +23,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    @include media("<=phone") {
+      width: 80%;
+    }
 
     img {
       width: 56px;
@@ -59,6 +63,10 @@
   align-items: center;
   justify-content: center;
 
+  @include media("<=phone") {
+    width: 100%;
+  }
+
   &::before {
     content: "";
     height: 80vh;
@@ -86,6 +94,12 @@
     line-height: normal;
     line-height: 1.5;
     margin-bottom: 10px;
+
+    @include media("<=phone") {
+      font-size: 34px;
+      width: 96%;
+      margin-top: 120px;
+    }
 
     span {
       color: #ffcc2a;
@@ -131,6 +145,12 @@
   flex-direction: column;
   padding: 0 100px;
 
+  @include media("<=phone") {
+    margin-top: 22%;
+    width: 100%;
+    padding: 10px;
+  }
+
   h2 {
     color: var(--Black10, #101720);
     text-align: center;
@@ -140,6 +160,11 @@
     line-height: normal;
     text-transform: capitalize;
     margin-bottom: 10px;
+
+    @include media("<=phone") {
+      font-size: 32px;
+      margin-top: 40px;
+    }
   }
 
   .subHeader {
@@ -154,6 +179,10 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+
+    @include media("<=phone") {
+      width: 90%;
+    }
   }
 }
 
