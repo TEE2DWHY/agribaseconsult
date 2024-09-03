@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import styles from './Faq.module.scss';
-import plus from '../../assets/images/plus.svg';
-import minus from '../../assets/images/minus.svg';
+import { useState } from "react";
+import styles from "./Faq.module.scss";
+import plus from "../../assets/images/plus.svg";
+import minus from "../../assets/images/minus.svg";
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleQuestionClick = (index: number) => {
     if (index === openIndex) {
-      // Close the currently open answer
+      // Close function
       setOpenIndex(null);
     } else {
-      // Open the clicked answer
+      // Open function
       setOpenIndex(index);
     }
   };
