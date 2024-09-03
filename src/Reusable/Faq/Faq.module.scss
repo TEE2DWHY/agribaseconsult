@@ -4,12 +4,52 @@
     }
   }
 
-  .faq_head p:nth-child(1){
+  .faq_head{
+    position: relative;
+    top: 400px;
+  }
+
+  .faq_p1{
 color: #000;
 text-align: center;
 font-family: "Montserrat Alternates";
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
-line-height: 120%; /* 48px */
+line-height: 120%;
+  }
+
+  .faq_top{
+    padding: 10px 24px;
+    margin-bottom: 60px;
+    border-radius: 16px;
+    border: var(--Radius-Sharp, 1px) solid var(--Grey-grey-100, #B9B9B9);
+    background: var(--white-100, #FFF);
+  }
+
+  .faq_top.open{
+    background: var(--green01, #EEF8EE);
+    transition: max-height 2s ease-out;
+  }
+
+  .faq_q1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .hr_line {
+      border: 1px solid #ccc;
+    }
+  
+
+  .faq_answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+
+  .faq_answer.open {
+    max-height: 200px;
+    padding: 15px;
   }
