@@ -7,8 +7,22 @@ const ContactForm = () => {
             <p>You can reach us anytime</p>
             <form className={styles.contact_form}>
               <div className={styles.contact_form1}>
-              <input placeholder="First Name"/>
-              <input placeholder="Last Name"/>
+              <input
+                type="firstname"
+                placeholder="First name"
+                name="firstname"
+                // value={email}
+                required
+                // onChange={(e) => setEmail(e.target.
+              />
+              <input
+               type="lastname"
+               placeholder="Last name"
+               name="lastname"
+              //  value={email}
+               required
+              //  onChange={(e) => setEmail(e.target.value)}
+              />
               </div>
               <div className={styles.contact_form2}>
               <input placeholder="Email"/>
