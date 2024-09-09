@@ -8,10 +8,8 @@ const Faq = () => {
 
   const handleQuestionClick = (index: number) => {
     if (index === openIndex) {
-      // Close function
       setOpenIndex(null);
     } else {
-      // Open function
       setOpenIndex(index);
     }
   };
@@ -54,3 +52,4 @@ const Faq = () => {
 };
 
 export default Faq;
+
