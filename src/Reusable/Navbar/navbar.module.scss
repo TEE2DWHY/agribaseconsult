@@ -1,11 +1,8 @@
-@import "include-media"; // for styling on all screens
-
-$breakpoints: (
-  phone: 480px,
-  tablet: 768px,
-  desktop: 1024px,
-  LGDesktop: 1920px,
-);
+// pls use this for mobile
+@mixin mobile {
+  @media screen and (max-width: 868px) {
+  }
+}
 
 .navbar {
   display: flex;
@@ -14,9 +11,6 @@ $breakpoints: (
   background: rgba(22, 19, 18, 0.65);
   backdrop-filter: blur(6.25px);
   padding: 20px 40px;
-  @include media("<=phone") {
-    padding: 30px 15px;
-  }
 
   span {
     font-weight: 900;
@@ -38,21 +32,9 @@ $breakpoints: (
     align-items: center;
     gap: 90px;
 
-    @include media("<=phone") {
-      display: none;
-    }
-
     li {
       font-size: 16px;
       color: #fff;
-    }
-  }
-
-  .toggle {
-    display: none;
-    @include media("<=phone") {
-      display: flex;
-      cursor: pointer;
     }
   }
   .active {

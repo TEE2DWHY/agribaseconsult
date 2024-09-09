@@ -1,11 +1,4 @@
-@import "include-media"; // for styling on all screens
-
-$breakpoints: (
-  phone: 480px,
-  tablet: 768px,
-  desktop: 1024px,
-  LGDesktop: 1920px,
-);
+@import "../../utils/breakpoint.module.scss"; // for styling on all screens
 
 // Cards
 .cards {
@@ -170,7 +163,7 @@ $breakpoints: (
 
     @include media("<=phone") {
       font-size: 32px;
-      margin-top: 90px;
+      margin-top: 40px;
     }
   }
 
@@ -201,31 +194,17 @@ $breakpoints: (
   padding: 60px 100px;
   margin-top: 5%;
 
-  @include media("<=phone") {
-    padding: 20px;
-    flex-direction: column;
-    width: 100%;
-  }
-
   .left {
+    width: 50%;
     padding-left: 60px;
-    @include media("<=phone") {
-      width: 100%;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
 
     h1 {
       color: #101720;
-      font-size: 30px;
+      font-size: 40px;
       font-weight: 700;
       line-height: normal;
       text-transform: capitalize;
       margin-bottom: 10px;
-      text-align: center;
     }
 
     p {
@@ -234,10 +213,6 @@ $breakpoints: (
       margin: 0 0 20px 0;
       font-family: "Outfit";
       font-size: 18px;
-      @include media("<=phone") {
-        width: 90%;
-        text-align: center;
-      }
     }
 
     ul {
@@ -281,11 +256,6 @@ $breakpoints: (
       line-height: normal;
       border: none;
       margin-top: 30px;
-
-      @include media("<=phone") {
-        display: block;
-        margin: 30px auto;
-      }
     }
   }
 
@@ -303,33 +273,15 @@ $breakpoints: (
   display: flex;
   justify-content: space-between;
   padding: 100px;
-  @include media("<=phone") {
-    flex-direction: column;
-    padding: 50px 0;
-    align-items: center;
-    justify-content: center;
-  }
 
   .left {
     img {
       margin-top: -50px;
-
-      @include media("<=phone") {
-        width: 300px;
-        height: 300px;
-      }
     }
   }
 
   .right {
     padding-left: 30px;
-    @include media("<=phone") {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
     h1 {
       color: #000;
       font-size: 40px;
@@ -338,10 +290,6 @@ $breakpoints: (
       line-height: normal;
       text-transform: capitalize;
       margin-bottom: 10px;
-
-      @include media("<=phone") {
-        text-align: center;
-      }
     }
     p {
       color: var(--Black08, #40454d);
@@ -354,10 +302,6 @@ $breakpoints: (
       width: 90%;
       line-height: 1.4;
       margin-top: 0;
-
-      @include media("<=phone") {
-        text-align: center;
-      }
     }
 
     button {
@@ -373,11 +317,6 @@ $breakpoints: (
       line-height: normal;
       border: none;
       margin-top: 15px;
-
-      @include media("<=phone") {
-        display: block;
-        margin: 10px auto;
-      }
     }
   }
 }
@@ -387,15 +326,6 @@ $breakpoints: (
   background: rgba(183, 185, 188, 0.22);
   padding: 40px 100px;
   margin-top: 0;
-  @include media("<=phone") {
-    display: block;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-  }
 
   h1 {
     color: var(--Base-Base-Black, #090a0b);
@@ -405,10 +335,6 @@ $breakpoints: (
     line-height: normal;
     text-transform: capitalize;
     margin-bottom: 10px;
-    @include media("<=phone") {
-      text-align: center;
-      font-size: 35px;
-    }
   }
 
   p {
@@ -421,10 +347,6 @@ $breakpoints: (
     width: 40%;
     margin-top: 0;
     text-align: justify;
-    @include media("<=phone") {
-      text-align: center;
-      width: 100%;
-    }
   }
 
   .carousel {
@@ -432,11 +354,6 @@ $breakpoints: (
     overflow: hidden;
     width: 100%;
     display: flex;
-    text-align: center;
-
-    @include media("<=phone") {
-      width: 100%;
-    }
   }
 
   .testimonial {
@@ -446,9 +363,6 @@ $breakpoints: (
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 40%;
     transition: transform 0.5s ease-in-out;
-    @include media("<=phone") {
-      width: 100%;
-    }
 
     .customerInfo {
       display: flex;

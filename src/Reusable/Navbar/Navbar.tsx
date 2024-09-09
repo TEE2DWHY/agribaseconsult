@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./navbar.module.scss";
-import { IoReorderThreeOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const location = useLocation();
@@ -43,9 +42,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <span className={styles.toggle}>
-        <IoReorderThreeOutline size={40} />
-      </span>
     </nav>
   );
 };
