@@ -1,3 +1,12 @@
+@import "include-media"; // for styling on all screens
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  LGDesktop: 1920px,
+);
+
 .thirdPart{
     width: 100%;
     height: 550px;
@@ -12,7 +21,9 @@
     // height: 130px;
     margin: auto;
     //  margin-top: 130px;
-
+    @include media("<=phone"){
+        width: 100%;
+    }
 }
 .thirdPartWord{
     color: var(--white-100, #FFF);
@@ -21,4 +32,8 @@
     font-size: 40px;
     font-weight: 700;
     // line-height: 48px;
+    @include media("<=phone") {
+        font-size: 20px;
+        text-align: center;
+      }
 }
