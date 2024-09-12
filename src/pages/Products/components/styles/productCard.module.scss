@@ -1,3 +1,12 @@
+@import "include-media"; // for styling on all screens
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  LGDesktop: 1920px,
+);
+
 .cardArea{
     width: 100%;
     height: 450px;
@@ -5,6 +14,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @include media("<=phone") {
+        height: 300px;
+      }
 
     img{
         position: absolute;
@@ -12,18 +24,27 @@
             top: 2%;
             left: 88%;
             transform: rotate(90deg); 
+            @include media("<=phone") {
+                width: 12%;
+                top: 10%;
+                left: 88%;
+              }
         }
 
         &:nth-child(2) {
             transform: rotate(110deg); 
             left: 5%;
             top: 50%;
+            @include media("<=phone") {
+                width: 12%;
+                top: 75%;
+                left: 1%;
+              }
         }
     }
 }
 .card{
     display: flex;
-    
     align-items: center;
     width: 1155px;
     height: 328px;
@@ -32,13 +53,29 @@
     background-size: contain; 
     background-position: left; 
     background-repeat: no-repeat;
+    @include media("<=phone") {
+        height: 150px;
+        width: 85%;
+        padding: 0 20px;
+      }
 
-    p{
+    p {
         color: var(--white-100, #FFF);
         font-size: 40px;
         font-weight: 700;
         line-height: 48px;
         margin-left: 80px;
+        @include media("<=phone") {
+        font-size: 13px;
+        line-height: 20px;
+        margin-left: 0px;
+        // text-align: justify;
+        font-weight: 700;
+
+          }
+    }
+    a {
+        text-decoration: none;
     }
 
     button {
@@ -52,6 +89,13 @@
         font-size: 16px;
         font-weight: 600;
         margin-right: 80px;
+        @include media("<=phone") {
+            width: 150px;
+            font-size: 14px;
+            height: 40px;
+            border-radius: 15px;
+            margin-right: 0px;
 
+              }
     }
 }
