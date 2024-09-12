@@ -10,7 +10,9 @@ export default function ProductCard (){
                 <img src={star1} alt="shine" />
                 <img src={star2} alt="shine" />
                 <p>We supply supermarkets, bakeries, restaurants and every other outlets</p>
+                <a href="/contact">
                 <button>Contact Us</button>
+                </a>
             </div>
         </div>
         </>
