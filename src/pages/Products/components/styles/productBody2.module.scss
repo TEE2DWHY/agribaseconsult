@@ -1,3 +1,13 @@
+@import "include-media"; // for styling on all screens
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  LGDesktop: 1920px,
+);
+
+
 .secondPart{
     background-color: #E8F6E9;
     width: 100%;
@@ -5,6 +15,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media("<=phone") {
+      height: 800px;
+    }
 }
 
 .secondPart1{
@@ -13,9 +26,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media("<=phone") {
+      flex-direction: column;
+    }
   }
 .secondPart01, .secondPart02{
     width: 50%;
+    @include media("<=phone") {
+      width: 100%;
+    }
+  }
+  .secondPart02{
+    @include media("<=phone") {
+      margin-top: 20px;
+    }
   }
 
   .productWord{
@@ -25,6 +49,10 @@
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
+    @include media("<=phone") {
+      font-size: 25px;
+      text-align: center;
+    }
   }
   .productWord2{
     color: var(--Base-Base-Black, #090A0B);
@@ -34,6 +62,10 @@
     font-weight: 400;
     line-height: 21.6px;
     width: 85%;
+    @include media("<=phone") {
+      width: 100%;
+      text-align: justify;
+    }
   }
   .productWord3{
     color: var(--green10, #52B954);
@@ -66,10 +98,18 @@
     font-weight: 700;
     line-height: 28.8px;
     margin-left: 90px;
+    @include media("<=phone") {
+      font-size: 19px;
+    }
   }
   .productCall{
     display: inline-flex;
     align-items: center;
+  }
+  .call{
+    @include media("<=phone") {
+      width: 20%;
+    }
   }
   .pCall{
     color: var(--Base-Base-Black, #090A0B);
@@ -77,4 +117,7 @@
     font-weight: 700;
     line-height: 38.4px;
     margin-left: 20px;
+    @include media("<=phone") {
+      font-size: 19px;
+    }
   }

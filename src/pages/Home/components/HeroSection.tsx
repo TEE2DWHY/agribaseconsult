@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../home.module.scss";
 
 const HeroSection = () => {
@@ -9,7 +10,9 @@ const HeroSection = () => {
           <span>Healthy Living</span>
         </h1>
         <p>We offer the best of fresh poultry produce</p>
-        <button>Get Started</button>
+        <Link to={"/product"}>
+          <button>Get Started</button>
+        </Link>
       </div>
     </>
   );

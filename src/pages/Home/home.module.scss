@@ -24,7 +24,7 @@
     align-items: center;
     flex-direction: column;
     @include media("<=phone") {
-      width: 80%;
+      width: 90%;
     }
 
     img {
@@ -147,7 +147,7 @@
 
   @include media("<=phone") {
     margin-top: 22%;
-    width: 100%;
+    // width: 100%;
     padding: 10px;
   }
 
@@ -163,7 +163,7 @@
 
     @include media("<=phone") {
       font-size: 32px;
-      margin-top: 40px;
+      // margin-top: 90px;
     }
   }
 
@@ -194,9 +194,23 @@
   padding: 60px 100px;
   margin-top: 5%;
 
+  @include media("<=phone") {
+    padding: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+
   .left {
     width: 50%;
     padding-left: 60px;
+    @include media("<=phone") {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
 
     h1 {
       color: #101720;
@@ -205,6 +219,7 @@
       line-height: normal;
       text-transform: capitalize;
       margin-bottom: 10px;
+      text-align: center;
     }
 
     p {
@@ -213,6 +228,10 @@
       margin: 0 0 20px 0;
       font-family: "Outfit";
       font-size: 18px;
+      @include media("<=phone") {
+        width: 90%;
+        text-align: center;
+      }
     }
 
     ul {
@@ -228,11 +247,16 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
         margin-left: 0;
         text-transform: capitalize;
         line-height: 1.5;
+        width: 65%;
+        text-align: justify;
+        @include media("<=phone") {
+          width: 95%;
+        }
 
         .check {
           width: 30px;
@@ -282,6 +306,13 @@
 
   .right {
     padding-left: 30px;
+    @include media("<=phone") {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
     h1 {
       color: #000;
       font-size: 40px;
@@ -290,6 +321,10 @@
       line-height: normal;
       text-transform: capitalize;
       margin-bottom: 10px;
+
+      @include media("<=phone") {
+        text-align: center;
+      }
     }
     p {
       color: var(--Black08, #40454d);
@@ -326,6 +361,15 @@
   background: rgba(183, 185, 188, 0.22);
   padding: 40px 100px;
   margin-top: 0;
+  @include media("<=phone") {
+    display: block;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 
   h1 {
     color: var(--Base-Base-Black, #090a0b);
