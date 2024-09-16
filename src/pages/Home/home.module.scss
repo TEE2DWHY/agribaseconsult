@@ -2,6 +2,7 @@
 
 $breakpoints: (
   phone: 480px,
+  iphoneXr: 414px,
   tablet: 768px,
   desktop: 1024px,
   LGDesktop: 1920px,
@@ -88,6 +89,10 @@ $breakpoints: (
     margin-top: -90px;
 
     @include media("<=phone") {
+      height: 78vh;
+    }
+
+    @include media(">=iphoneXr") {
       height: 60vh;
     }
   }
@@ -109,7 +114,7 @@ $breakpoints: (
     @include media("<=phone") {
       font-size: 34px;
       width: 96%;
-      margin-top: 60px;
+      margin-top: 40px;
     }
 
     span {
@@ -157,9 +162,13 @@ $breakpoints: (
   padding: 0 100px;
 
   @include media("<=phone") {
-    margin-top: 29%;
+    margin-top: 16%;
     // width: 100%;
     padding: 10px;
+  }
+
+  @include media(">=iphoneXr") {
+    margin-top: 28%;
   }
 
   h2 {
