@@ -5,21 +5,28 @@
   }
 
   .contact_body{
-    height: 1000px;
     @include mobile{
-      margin-top: 100px;
+      margin-top: 200px;
     }
   }
 
   .contact_body_div1{
     position: relative;
-    top: 400px;
+    top: 500px;
     left: 0;
-  }
+
+    @include mobile{
+      display: none;
+    }
+   }
 
   .contact_body_div2{
     text-align: center;
     padding: 0 25%;
     position: relative;
     top: -500px;
+
+    @include mobile{
+      padding: 0 5%;
+    }
   }
