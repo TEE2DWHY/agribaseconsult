@@ -2,6 +2,7 @@ import styles from "../home.module.scss";
 import cock from "../../../assets/images/cock.png";
 import check from "../../../assets/images/check.svg";
 import eggDesign from "../../../assets/images/egg-design.png";
+import { Link } from "react-router-dom";
 
 const Offer = () => {
   return (
@@ -41,7 +42,9 @@ const Offer = () => {
               enjoy a hassle-free experience every time.
             </li>
           </ul>
-          <button>See Our Products</button>
+          <Link to={"/product"}>
+            <button>See Our Products</button>
+          </Link>
         </div>
         <div className={styles.right}>
           <img src={cock} alt="cock-img" />
@@ -58,7 +61,9 @@ const Offer = () => {
             pasture-raised chickens, nurtured in open fields for healthier, more
             nutritious eggs straight from our farm to your table.
           </p>
-          <button>Order Now</button>
+          <Link to={"/product"}>
+            <button>Order Now</button>
+          </Link>
         </div>
       </div>
     </>
