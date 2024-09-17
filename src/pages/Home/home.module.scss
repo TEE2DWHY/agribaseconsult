@@ -197,7 +197,7 @@
   @include media("<=phone") {
     padding: 20px;
     flex-direction: column;
-    // width: 100%;
+    width: 100%;
   }
 
   .left {
@@ -207,8 +207,8 @@
       width: 100%;
       padding: 0;
       display: flex;
-      // align-items: center;
-      // justify-content: center;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
     }
 
@@ -219,14 +219,7 @@
       line-height: normal;
       text-transform: capitalize;
       margin-bottom: 10px;
-      font-size: 38px;
-      width: 65%;
-      // text-align: center;
-      @include media("<=phone") {
-        text-align: center;
-        width: 100%;
-        font-size: 32px;
-      }
+      text-align: center;
     }
 
     p {
@@ -235,11 +228,9 @@
       margin: 0 0 20px 0;
       font-family: "Outfit";
       font-size: 18px;
-      width: 65%;
       @include media("<=phone") {
-        width: 100%;
+        width: 90%;
         text-align: center;
-        margin-bottom: 5px;
       }
     }
 
@@ -320,8 +311,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      // width: 100%;
-      padding: 0;
+      width: 100%;
     }
     h1 {
       color: #000;
@@ -334,7 +324,6 @@
 
       @include media("<=phone") {
         text-align: center;
-        font-size: 28px;
       }
     }
     p {
@@ -379,7 +368,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    // width: 100%;
+    width: 100%;
   }
 
   h1 {
