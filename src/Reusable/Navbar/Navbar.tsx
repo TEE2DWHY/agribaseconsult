@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./navbar.module.scss";
 import { IoReorderThreeOutline } from "react-icons/io5";
+import { IoCloseOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const location = useLocation();
   const [activeRoute, setActiveRoute] = useState(location.pathname);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setActiveRoute(location.pathname);
@@ -17,6 +19,10 @@ const Navbar = () => {
     { path: "/product", label: "Product" },
     { path: "/contact", label: "Contact Us" },
   ];
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -31,7 +37,7 @@ const Navbar = () => {
         </span>
       </Link>
 
-      <ul>
+      <ul className={`${menuOpen ? styles.open : ""}`}>
         {routes.map((route) => (
           <li
             key={route.path}
@@ -43,8 +49,13 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <span className={styles.toggle}>
-        <IoReorderThreeOutline size={40} />
+
+      <span className={styles.toggle} onClick={toggleMenu}>
+        {menuOpen ? (
+          <IoCloseOutline size={30} />
+        ) : (
+          <IoReorderThreeOutline size={30} />
+        )}
       </span>
     </nav>
   );
