@@ -1,4 +1,4 @@
-@import "include-media"; // for styling on all screens
+@import "include-media";
 
 $breakpoints: (
   phone: 480px,
@@ -14,8 +14,16 @@ $breakpoints: (
   background: rgba(22, 19, 18, 0.65);
   backdrop-filter: blur(6.25px);
   padding: 20px 40px;
+  position: relative;
+  z-index: 1000;
+
   @include media("<=phone") {
     padding: 30px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
   }
 
   span {
@@ -40,25 +48,55 @@ $breakpoints: (
 
     @include media("<=phone") {
       display: none;
+      position: fixed;
+      top: -18px;
+      right: -5px;
+      width: 50%;
+      height: 50vh;
+      background: rgba(22, 19, 18, 0.95);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
     }
 
     li {
       font-size: 16px;
       color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .open {
+    @include media("<=phone") {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
     }
   }
 
   .toggle {
     display: none;
+
     @include media("<=phone") {
       display: flex;
       cursor: pointer;
+      position: fixed;
+      // top: 20px;
+      right: 20px;
+      z-index: 1001;
     }
   }
+
   .active {
     color: #52b954;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
