@@ -52,9 +52,9 @@ const Navbar = () => {
 
       <span className={styles.toggle} onClick={toggleMenu}>
         {menuOpen ? (
-          <IoCloseOutline size={30} />
+          <IoCloseOutline size={40} />
         ) : (
-          <IoReorderThreeOutline size={30} />
+          <IoReorderThreeOutline size={40} />
         )}
       </span>
     </nav>
