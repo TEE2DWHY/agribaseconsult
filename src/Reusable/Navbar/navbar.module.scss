@@ -1,8 +1,11 @@
-// pls use this for mobile
-@mixin mobile {
-  @media screen and (max-width: 868px) {
-  }
-}
+@import "include-media"; // for styling on all screens
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  LGDesktop: 1920px,
+);
 
 .navbar {
   display: flex;
@@ -11,6 +14,17 @@
   background: rgba(22, 19, 18, 0.65);
   backdrop-filter: blur(6.25px);
   padding: 20px 40px;
+  position: relative;
+  z-index: 1000;
+
+  @include media("<=phone") {
+    padding: 30px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  }
 
   span {
     font-weight: 900;
@@ -32,15 +46,41 @@
     align-items: center;
     gap: 90px;
 
+    @include media("<=phone") {
+      display: none;
+    }
+
     li {
       font-size: 16px;
       color: #fff;
+      cursor: pointer;
     }
   }
+
+  .open {
+    @include media("<=phone") {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .toggle {
+    display: none;
+
+    @include media("<=phone") {
+      display: flex;
+      cursor: pointer;
+      position: fixed;
+      // top: 20px;
+      right: 20px;
+      z-index: 1001;
+    }
+  }
+
   .active {
     color: #52b954;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
