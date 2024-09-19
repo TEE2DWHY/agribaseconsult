@@ -1,9 +1,18 @@
 // pls use this for mobile
-@mixin mobile {
-  @media screen and (max-width: 868px) {
-    @content
-  }
-}
+// @mixin mobile {
+//   @media screen and (max-width: 868px) {
+//     @content
+//   }
+// }
+
+@import "include-media"; // for styling on all screens
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  LGDesktop: 1920px,
+);
 
 // color variables
 $basewhite: #FCFCFC;
