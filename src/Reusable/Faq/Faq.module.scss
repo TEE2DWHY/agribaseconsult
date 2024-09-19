@@ -1,14 +1,17 @@
-@mixin mobile {
-    @media screen and (max-width: 868px) {
-      @content
-    }
-  }
+@import "include-media"; // for styling on all screens
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  LGDesktop: 1920px,
+);
 
   .faq_head{
     position: relative;
     top: 400px;
 
-    @include mobile{
+    @include media("<=phone") {
       // display: block;
       // position: relative;
       // top: 300px;
@@ -24,7 +27,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 120%;
 
-@include mobile{
+@include media("<=phone") {
   font-size: 25px;
   font-weight: 400;
 }

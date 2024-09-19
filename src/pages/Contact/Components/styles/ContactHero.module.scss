@@ -1,8 +1,11 @@
-@mixin mobile {
-    @media screen and (max-width: 868px) {
-      @content
-    }
-  }
+@import "include-media"; // for styling on all screens
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  LGDesktop: 1920px,
+);
 
 .contact_hero{
     width: 100%;
@@ -15,7 +18,7 @@
     background-position: left; 
     background-repeat: no-repeat;
   
-    @include mobile{
+    @include media("<=phone") {
       height: 100%;
       padding-top: 20px;
       // linear-gradient: (to right, rgba(193, 225, 194, 0.69) 100%, rgba(255, 255, 255, 1) 20%);
@@ -29,7 +32,7 @@
     padding-right: 80px;
     gap: 80px;
   
-    @include mobile{
+    @include media("<=phone") {
       display: block;
       padding: 0 20px;
     }
@@ -40,7 +43,7 @@
     width: 533px;
     padding-top: 60px;
   
-    @include mobile{
+     @include media("<=phone"){
       width: 100%;
       padding-top: 0;
     }
