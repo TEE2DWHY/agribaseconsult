@@ -1,25 +1,35 @@
-@mixin mobile {
-    @media screen and (max-width: 868px) {
-      @content
-    }
-  }
+@import "include-media"; // for styling on all screens
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  LGDesktop: 1920px,
+);
 
   .contact_body{
-    height: 1000px;
-    @include mobile{
-      margin-top: 100px;
+    @include media("<=phone") {
+      margin-top: 200px;
     }
   }
 
   .contact_body_div1{
     position: relative;
-    top: 400px;
+    top: 500px;
     left: 0;
-  }
+
+    @include media("<=phone") {
+      display: none;
+    }
+   }
 
   .contact_body_div2{
     text-align: center;
     padding: 0 25%;
     position: relative;
     top: -500px;
+
+    @include media("<=phone") {
+      padding: 0 5%;
+    }
   }
