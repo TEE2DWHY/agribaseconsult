@@ -1,4 +1,11 @@
-@import "../../utils/breakpoint.module.scss"; // for styling on all screens
+@import "include-media"; // for styling on all screens
+
+$breakpoints: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+  LGDesktop: 1920px,
+);
 
 // Cards
 .cards {
@@ -197,29 +204,35 @@
   @include media("<=phone") {
     padding: 20px;
     flex-direction: column;
-    width: 100%;
+    // width: 100%;
   }
 
   .left {
-    width: 50%;
     padding-left: 60px;
     @include media("<=phone") {
       width: 100%;
       padding: 0;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      // align-items: center;
+      // justify-content: center;
       flex-direction: column;
     }
 
     h1 {
       color: #101720;
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 700;
       line-height: normal;
       text-transform: capitalize;
       margin-bottom: 10px;
-      text-align: center;
+      font-size: 38px;
+      width: 65%;
+      // text-align: center;
+      @include media("<=phone") {
+        text-align: center;
+        width: 100%;
+        font-size: 32px;
+      }
     }
 
     p {
@@ -228,9 +241,11 @@
       margin: 0 0 20px 0;
       font-family: "Outfit";
       font-size: 18px;
+      width: 65%;
       @include media("<=phone") {
-        width: 90%;
+        width: 100%;
         text-align: center;
+        margin-bottom: 5px;
       }
     }
 
@@ -280,6 +295,11 @@
       line-height: normal;
       border: none;
       margin-top: 30px;
+
+      @include media("<=phone") {
+        display: block;
+        margin: 30px auto;
+      }
     }
   }
 
@@ -297,10 +317,21 @@
   display: flex;
   justify-content: space-between;
   padding: 100px;
+  @include media("<=phone") {
+    flex-direction: column;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+  }
 
   .left {
     img {
       margin-top: -50px;
+
+      @include media("<=phone") {
+        width: 300px;
+        height: 300px;
+      }
     }
   }
 
@@ -311,7 +342,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      // width: 100%;
+      padding: 0;
     }
     h1 {
       color: #000;
@@ -324,6 +356,7 @@
 
       @include media("<=phone") {
         text-align: center;
+        font-size: 28px;
       }
     }
     p {
@@ -337,6 +370,10 @@
       width: 90%;
       line-height: 1.4;
       margin-top: 0;
+
+      @include media("<=phone") {
+        text-align: center;
+      }
     }
 
     button {
@@ -352,6 +389,11 @@
       line-height: normal;
       border: none;
       margin-top: 15px;
+
+      @include media("<=phone") {
+        display: block;
+        margin: 10px auto;
+      }
     }
   }
 }
@@ -368,7 +410,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    // width: 100%;
   }
 
   h1 {
@@ -379,6 +421,10 @@
     line-height: normal;
     text-transform: capitalize;
     margin-bottom: 10px;
+    @include media("<=phone") {
+      text-align: center;
+      font-size: 35px;
+    }
   }
 
   p {
@@ -391,6 +437,10 @@
     width: 40%;
     margin-top: 0;
     text-align: justify;
+    @include media("<=phone") {
+      text-align: center;
+      width: 100%;
+    }
   }
 
   .carousel {
@@ -398,6 +448,11 @@
     overflow: hidden;
     width: 100%;
     display: flex;
+    text-align: center;
+
+    @include media("<=phone") {
+      width: 100%;
+    }
   }
 
   .testimonial {
@@ -407,6 +462,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 40%;
     transition: transform 0.5s ease-in-out;
+    @include media("<=phone") {
+      width: 100%;
+    }
 
     .customerInfo {
       display: flex;

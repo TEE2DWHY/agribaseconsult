@@ -1,12 +1,11 @@
-@import "include-media"; // for styling on all screens
+@import "include-media";
 
 $breakpoints: (
   phone: 480px,
   tablet: 768px,
   desktop: 1024px,
   LGDesktop: 1920px,
-); 
-
+);
 .container {
   display: flex;
   align-items: center;
@@ -14,12 +13,21 @@ $breakpoints: (
   margin: 120px 0 -70px 0;
   z-index: 999999;
 
+  @include media("<=phone") {
+    margin: 40px 0;
+  }
+
   .subscribe {
     width: 70%;
     display: flex;
     align-self: center;
     border-radius: 24px;
     margin-bottom: 30px;
+    @include media("<=phone") {
+      flex-direction: column;
+      width: 100%;
+      padding: 20px;
+    }
 
     .left {
       border-radius: 24px;
@@ -33,6 +41,9 @@ $breakpoints: (
       background-repeat: no-repeat;
       padding: 40px;
       width: 80%;
+      @include media("<=phone") {
+        width: 80%;
+      }
 
       h1 {
         color: #fff;
@@ -47,6 +58,10 @@ $breakpoints: (
         line-height: 1.4;
         font-family: "outfit";
         margin-top: 0;
+
+        @include media("<=phone") {
+          width: 100%;
+        }
       }
     }
 
