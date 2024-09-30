@@ -1,4 +1,4 @@
-@import "include-media"; // for styling on all screens
+@import "include-media";
 
 $breakpoints: (
   phone: 480px,
@@ -48,6 +48,22 @@ $breakpoints: (
 
     @include media("<=phone") {
       display: none;
+      position: fixed;
+      top: -18px;
+      right: -5px;
+      width: 50%;
+      height: 50vh;
+      background: rgba(22, 19, 18, 0.95);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
     }
 
     li {
