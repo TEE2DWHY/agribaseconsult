@@ -1,8 +1,8 @@
-import styles from "../home.module.scss";
-import Cards from "./Cards";
-import chicken from "../../../assets/images/chicken.png";
-import nest from "../../../assets/images/nest.png";
-import chickenCoop from "../../../assets/images/chicken-coop.png";
+import styles from '../home.module.scss';
+import Cards from './Cards';
+import chicken from '../../../assets/images/chicken.png';
+import nest from '../../../assets/images/nest.png';
+import chickenCoop from '../../../assets/images/chicken-coop.png';
 
 const Features = () => {
   return (
